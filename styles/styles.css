@@ -1,8 +1,22 @@
 body {
     background-color: rgb(168, 206, 239);
 }
-a {
+.nav_link {
     padding: 10px;
     color:black;
     font-size: 1.2em;
+}
+img {
+    width: 450px;
+}
+a {
+    color: black;
+}
+#sub_title {
+    color:whitesmoke;
+    font-size: 5em;
+}
+#main_title {
+    font-size: 5em;
+    color:black;
 }
