@@ -1,0 +1,27 @@
+body {
+    background-color: #5ca0d7;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#main_title:hover {
+    color: black;
+}
+
+ol {
+    text-align: left;
+}
+
+img {
+    width: 50%;
+    padding: 20px;
+}
