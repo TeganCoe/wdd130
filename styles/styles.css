@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Lilita+One&family=Permanent+Marker&display=swap');
+
 body {
     background-color: rgb(168, 206, 239);
     margin: 0;
@@ -19,6 +21,7 @@ nav {
     font-size: 1.2em;
     text-decoration: none;
     text-align: center;
+    font-family: "permanent marker", "lilita one";
 }
 
 main {
@@ -27,8 +30,10 @@ main {
 }
 
 img {
-    width: 75%;
+    width: 60%;
     padding: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 a {
@@ -43,18 +48,25 @@ nav a:hover{
     font-size: 6em;
     color:black;
     text-align: center;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
+    font-family: 'lilita one', 'honk', 'permanent marker', 'sans-serif';
 }
 
 p, h3 {
     text-align: center;
 }
 
-p {
+main p {
+    font-size: 1.2em;
+    width: 75%;
+    margin: 50px auto;
+    line-height: 1.5em;
+    padding: 50px;
+    background-color: rgb(168, 206, 239);
+    border: 5px solid whitesmoke;
+    border-radius: 15px;
+}
+
+footer p {
     font-size: 1.2em;
 }
 
@@ -65,4 +77,11 @@ p {
 
 footer {
     padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    color: whitesmoke;
 }
