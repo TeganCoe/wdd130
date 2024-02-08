@@ -1,0 +1,19 @@
+.circle-images img {
+    border: 7px solid rgb(65, 65, 65);
+    border-radius: 50%;
+    width: 150px;
+    height: auto; 
+    margin: 50px 20px; 
+}
+
+.main-image img {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    background-color: gray;
+}
