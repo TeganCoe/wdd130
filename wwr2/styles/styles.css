@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Riot&family=Protest+Strike&family=Rock+Salt&display=swap');
+
+* {
+    font-size: 22px;
+}
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -10,6 +16,7 @@
 nav a {
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -23,35 +30,41 @@ main section {
     text-align: center;
 }
 
-
 body {
     background-color: #f5f5f5;
     color: #333; 
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #2c3e50; 
+    background-color: #6f7364; 
     color: #ecf0f1;
 }
 
 nav a {
     color: whitesmoke;
+    text-align: center;
 }
 
 nav a:hover {
-    background-color: #3498db; 
+    background-color: #3d2c2c; 
     color: #ecf0f1; 
     text-decoration: none;
 }
 
 .book, .join {
-    background-color: #2c3e50;
+    background-color: #6f7364;
     color: #ecf0f1; 
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
-    background-color: #ff65a0; 
+    background-color: #543434; 
 }
 
 #background {
@@ -59,14 +72,18 @@ nav a:hover {
 }
 
 .msg {
-    background-color: #2c3e50; 
+    background-color: #6f7364; 
     color: #ffffff; 
+    line-height: 1.5em;
+    padding: 10px;
 }
 
 footer {
-    background-color: #34495e; 
+    background-color: #6f7364; 
     color: #ffffff; 
     text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -85,4 +102,45 @@ footer p a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.home-title {
+    font-family: 'protest riot', 'lobster', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'rock salt', 'lobster', sans-serif;
+    margin: 0;
+}
+
+.msg p {
+    font-size: .8 em;
+    padding-bottom: 15px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+#hero-img {
+    width: 100%;
 }
