@@ -21,7 +21,7 @@ Fonts are separated by a | */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #0b24a0  ;
   --nav-link-color: #0b24a0;
-  --nav-background-color: #D4AC0D;
+  --nav-background-color: #00d6d9;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #0b24a0;
 }
@@ -39,6 +39,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 30%;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);

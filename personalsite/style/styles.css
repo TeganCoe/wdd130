@@ -1,11 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Tauri&display=swap');
+
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0b24a0;
+  align-items: center;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  color: whitesmoke;
+  font-size: 2 em;
+  font-family: kanit;
+}
+
+nav a:hover {
+  background-color: #050f42; 
+  color: whitesmoke; 
+
+}
+
+.logo {
+  width: 7%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+
+ .wallpaper{
+  align-items: center;
+}
+
+.wallpaper img{
+  width: 100%; 
+
+  /* position: absolute;
+  z-index: -1; */
+  
+  /* background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; */
+}
+
+.text-overlay {
+  color: #f1eb83;
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  z-index: 4;
+  font-family: kanit;
+}
+
+.subtitle {
+    color: #f1eb83;
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 42%;
+    left: 46%;
+    z-index: 4;
+    font-family: kanit;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 40px;
+  background-color: black;
+  z-index: 5;
+}
+
+.title {
+  grid-column: 1/4;
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  z-index: 6;
+}
+
+.paragraph {
+  color: whitesmoke;
+  text-align: center;
+  grid-column: 1/4;
+  font-size: 2em;
+  font-family: Tauri;
+  border: solid #020e4a 10px;
+  padding: 30px;
+  background-color: #0b24a0;
+}
+
+.left-picture img {
+  width: 100%;
+  grid-area: 2/1/3/2;
+  width: 100%;
+}
+
+.middle-picture img {
+  width: 100%;
+  grid-area: 2/2/3/3;
+  width: 100%;
+}
+
+.right-picture img {
+  width: 100%;
+  grid-area: 2/3/3/4;
+  width: 100%;
+}
+
+.left-picture, .middle-picture, .right-picture {
+  border: solid #0b24a0 5px;
+  box-shadow: 5px 5px 10px #020e4a;
+  transition: transform .5s;
+}
+
+.left-picture:hover, .middle-picture:hover, .right-picture:hover {
+  opacity: .6;
+  transform: scale(1.05);
+}
+
+body {
+  background-color: black;
+}
+
+footer {
+  background-color: #0b24a0; 
+  color: whitesmoke; 
+  text-decoration: none;
+  padding: 25px 50px;
+  margin-top: 200px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer img {
+  padding: 10px;
+}
+
 /* Contact Us CSS*/
 
 .contact h1 {
     text-align: center;
-    margin: 10px;
-    font-size: 1.5em;
+    margin-top: 80px;
+    font-size: 2em;
     padding-top: 80px;
     padding-bottom: 30px;
+    color: whitesmoke;
+}
+
+.contact li {
+  color: whitesmoke;
 }
 
 form {
@@ -14,7 +185,7 @@ form {
     width: 600px;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     border-radius: 1em;
   }
   
@@ -74,14 +245,15 @@ form {
   button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
-    margin-left: 0.5em;
+    margin-left: 3em;
     padding: 10px;
     font-size: 1.1em;
     border-radius: 20px;
+    
   }
   
   #feedback {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     position: absolute;
     top: 0;
     left: 0;
