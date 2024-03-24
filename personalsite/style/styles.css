@@ -166,6 +166,19 @@ footer img {
 
 /* Contact Us CSS*/
 
+.background img{
+  width: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .contact h1 {
     text-align: center;
     margin-top: 80px;
@@ -173,6 +186,7 @@ footer img {
     padding-top: 80px;
     padding-bottom: 30px;
     color: whitesmoke;
+    background-color: #0b24a0;
 }
 
 .contact li {
