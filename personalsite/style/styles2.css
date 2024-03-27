@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Tauri&display=swap');
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0b24a0;
+  align-items: center;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  color: whitesmoke;
+  font-size: 2 em;
+  font-family: kanit;
+}
+
+nav a:hover {
+  background-color: #050f42; 
+  color: whitesmoke; 
+
+}
+
+.logo {
+  width: 7%;
+}
+
+body {
+    background-color: black;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("edited-banner.jpeg");
+    background-attachment: fixed;
+
+    color: #f1eb83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 40px;
+    background-color: black;
+    z-index: 5;
+  }
+
+  .paragraph {
+    color: whitesmoke;
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 2em;
+    font-family: Tauri;
+    border: solid #020e4a 10px;
+    padding: 30px;
+    background-color: #0b24a0;
+  }
+  
+  .left-picture img {
+    width: 100%;
+    grid-area: 2/1/3/2;
+    width: 100%;
+  }
+  
+  .middle-picture img {
+    width: 100%;
+    grid-area: 2/2/3/3;
+    width: 100%;
+  }
+  
+  .right-picture img {
+    width: 100%;
+    grid-area: 2/3/3/4;
+    width: 100%;
+  }
+  
+  .left-picture, .middle-picture, .right-picture {
+    border: solid #0b24a0 5px;
+    box-shadow: 5px 5px 10px #020e4a;
+    transition: transform .5s;
+  }
+  
+  .left-picture:hover, .middle-picture:hover, .right-picture:hover {
+    opacity: .6;
+    transform: scale(1.05);
+  }
+
+  footer {
+    background-color: #0b24a0; 
+    color: whitesmoke; 
+    text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+  }
+  
+  footer a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  footer img {
+    padding: 10px;
+  }
+
+
+/* More Information CSS */
+
+.container {
+  color: whitesmoke;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.container h2 {
+  font-size: 2em;
+}
+
+.container p {
+  font-size: 1.5em;
+}
+
+#introduction {
+  grid-area: 1/1/2/2;
+  margin-top: 50px;
+  }
+  
+#how-it-works {
+  grid-area: 2/2/3/3;
+  text-align: center;
+}
+
+#animals {
+  grid-area: 3/1/4/2;
+  text-align: center;
+}
+
+#locations {
+  grid-area: 4/2/5/3;
+  text-align: center;
+}
+
+#introduction, #how-it-works, #animals, #locations {
+  background-color: #0b24a0;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Contact Us CSS*/
+
+.background img{
+    width: 100%;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .contact h1 {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 2em;
+      padding-top: 80px;
+      padding-bottom: 30px;
+      color: whitesmoke;
+      /* background-color: #0b24a0; */
+  }
+  
+  .contact li {
+    color: whitesmoke;
+  }
+  
+  form {
+      /* Center the form on the page */
+      margin: 0 auto;
+      width: 600px;
+      /* Form outline */
+      padding: 1em;
+      border: 5px solid #ccc;
+      border-radius: 1em;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      padding-left: 80px;
+    }
+    
+    form li + li {
+      margin-top: 1em;
+    }
+    
+    label {
+      /* Uniform size & alignment */
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+      padding-right: 10px;
+    }
+    
+    input,
+    textarea {
+      /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+      font: 1em sans-serif;
+    
+      /* Uniform text field size */
+      width: 300px;
+      box-sizing: border-box;
+    
+      /* Match form field borders */
+      border: 1px solid #999;
+      padding: 10px;
+    }
+    
+    input:focus,
+    textarea:focus {
+      /* Additional highlight for focused elements */
+      border-color: #000;
+    }
+    
+    textarea {
+      /* Align multiline text fields with their labels */
+      vertical-align: top;
+    
+      /* Provide space to type some text */
+      height: 5em;
+    }
+    
+    .button {
+      /* Align buttons with the text fields */
+      padding-left: 90px; /* same size as the label elements */
+    }
+    
+    button {
+      /* This extra margin represent roughly the same space as the space
+         between the labels and their text fields */
+      margin-left: 3em;
+      padding: 10px;
+      font-size: 1.1em;
+      border-radius: 20px;
+      
+    }
+    
+    #feedback {
+      background-color: whitesmoke;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      /* make this element invisible until we are ready for it */
+      display: none;      
+  }
+  .moveDown {
+      margin-top: 3em;
+  }

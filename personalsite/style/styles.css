@@ -46,17 +46,6 @@ nav a:hover {
 
 .wallpaper img{
   width: 100%; 
-
-  /* position: absolute;
-  z-index: -1; */
-  
-  /* background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1; */
 }
 
 .text-overlay {
@@ -164,6 +153,23 @@ footer img {
   padding: 10px;
 }
 
+
+/* More Information CSS */
+
+.container {
+  color: whitesmoke;
+}
+
+.container h2 {
+  font-size: 2em;
+}
+
+.container p {
+  font-size: 1.5em;
+}
+
+
+
 /* Contact Us CSS*/
 
 .background img{
@@ -186,7 +192,7 @@ footer img {
     padding-top: 80px;
     padding-bottom: 30px;
     color: whitesmoke;
-    background-color: #0b24a0;
+    /* background-color: #0b24a0; */
 }
 
 .contact li {
