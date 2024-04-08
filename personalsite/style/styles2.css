@@ -131,10 +131,11 @@ body {
   color: whitesmoke;
   padding-top: 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   column-gap: 50px;
   row-gap: 50px;
+  max-width: 1500px;
 }
 
 .container h2 {
@@ -146,36 +147,63 @@ body {
 }
 
 #introduction {
-  grid-area: 1/1/2/2;
-  margin-top: 50px;
+  grid-area: 1/4/2/7;
+  text-align: center;
   }
   
 #how-it-works {
-  grid-area: 2/2/3/3;
-  text-align: center;
-}
-
-#animals {
-  grid-area: 3/1/4/2;
+  grid-area: 2/2/3/5;
   text-align: center;
 }
 
 #locations {
-  grid-area: 4/2/5/3;
+  grid-area: 3/4/4/7;
   text-align: center;
 }
+
+#animals {
+  grid-area: 4/2/5/5;
+  text-align: center;
+}
+
+#first-pic{
+  grid-area: 1/1/2/4;
+  width: 100%;
+}
+
+#second-pic{
+  grid-area: 2/4/3/7;
+  width: 100%;
+}
+
+#third-pic{
+  grid-area: 3/1/4/4;
+  width: 100%;
+}
+
+#fourth-pic{
+  grid-area: 4/4/5/7;
+  width: 100%;
+}
+
 
 #introduction, #how-it-works, #animals, #locations {
   background-color: #0b24a0;
   border: 2px solid whitesmoke;
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
+
+
 
 /* Contact Us CSS*/
 
